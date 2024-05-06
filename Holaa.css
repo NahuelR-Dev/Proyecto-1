@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff7360;
+    overflow: hidden;
+}
+
+.Car_todo{
+    width: 300px;
+    height: 384px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 14px 17px 42px -3px rgba(0, 0, 0, 0.3)
+}
+
+.card_img{
+    height: 192px;
+    width: 100%;
+    img{
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+
+    }
+}
+
+.card_avatar{
+    position: absolute;
+    width: 114px;
+    height: 114px;
+    border-radius: 50%;
+    overflow: hidden;
+    top: calc(50% - 57px);
+    img{
+        width: 100%;
+    }
+}
+
+
+.Titulo{
+    margin-top: 60px;
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+}
+
+.Sub_titulo{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    color: rgb(124, 124, 124);
+}
+
+.Btn1{
+    margin-top: 15px;
+    width: 76px;
+    height: 31px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 11px;
+    color: #000;
+    background: #fff;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    &:hover {
+        background: #ff7360;
+        color: #fff;
+    }
+    
+}
+/*El & lo usamos para anidar una clase con otra y no perdernos mas de lo devido */
+
+.Btn2{
+    background: #000;
+    color: #fff;
+}
